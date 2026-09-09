@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ludo Board</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ludo-board">
+    <!-- Green Base -->
+    <div class="base base-green">
+      <div class="base-inner">
+        <div class="circle"></div><div class="circle"></div>
+        <div class="circle"></div><div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- Yellow Base -->
+    <div class="base base-yellow">
+      <div class="base-inner">
+        <div class="circle"></div><div class="circle"></div>
+        <div class="circle"></div><div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- Red Base -->
+    <div class="base base-red">
+      <div class="base-inner">
+        <div class="circle"></div><div class="circle"></div>
+        <div class="circle"></div><div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- Blue Base -->
+    <div class="base base-blue">
+      <div class="base-inner">
+        <div class="circle"></div><div class="circle"></div>
+        <div class="circle"></div><div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- Center Triangles -->
+    <div class="center-box">
+      <div class="triangle-top"></div>
+      <div class="triangle-right"></div>
+      <div class="triangle-bottom"></div>
+      <div class="triangle-left"></div>
+    </div>
+
+    <!-- TOP ARM (Columns 7 to 9, Rows 1 to 6) -->
+    <!-- Row 1 -->
+    <div class="cell" style="grid-area: 1/7;"></div>
+    <div class="cell arrow text-y" style="grid-area: 1/8;">⬇</div>
+    <div class="cell" style="grid-area: 1/9;"></div>
+    <!-- Row 2 -->
+    <div class="cell" style="grid-area: 2/7;"></div>
+    <div class="cell bg-y" style="grid-area: 2/8;"></div>
+    <div class="cell bg-y" style="grid-area: 2/9;"></div>
+    <!-- Row 3 -->
+    <div class="cell star" style="grid-area: 3/7;">☆</div>
+    <div class="cell bg-y" style="grid-area: 3/8;"></div>
+    <div class="cell" style="grid-area: 3/9;"></div>
+    <!-- Row 4 -->
+    <div class="cell" style="grid-area: 4/7;"></div>
+    <div class="cell bg-y" style="grid-area: 4/8;"></div>
+    <div class="cell" style="grid-area: 4/9;"></div>
+    <!-- Row 5 -->
+    <div class="cell" style="grid-area: 5/7;"></div>
+    <div class="cell bg-y" style="grid-area: 5/8;"></div>
+    <div class="cell" style="grid-area: 5/9;"></div>
+    <!-- Row 6 -->
+    <div class="cell" style="grid-area: 6/7;"></div>
+    <div class="cell bg-y" style="grid-area: 6/8;"></div>
+    <div class="cell" style="grid-area: 6/9;"></div>
+
+    <!-- BOTTOM ARM (Columns 7 to 9, Rows 10 to 15) -->
+    <!-- Row 10 -->
+    <div class="cell" style="grid-area: 10/7;"></div>
+    <div class="cell bg-r" style="grid-area: 10/8;"></div>
+    <div class="cell" style="grid-area: 10/9;"></div>
+    <!-- Row 11 -->
+    <div class="cell" style="grid-area: 11/7;"></div>
+    <div class="cell bg-r" style="grid-area: 11/8;"></div>
+    <div class="cell" style="grid-area: 11/9;"></div>
+    <!-- Row 12 -->
+    <div class="cell" style="grid-area: 12/7;"></div>
+    <div class="cell bg-r" style="grid-area: 12/8;"></div>
+    <div class="cell" style="grid-area: 12/9;"></div>
+    <!-- Row 13 -->
+    <div class="cell" style="grid-area: 13/7;"></div>
+    <div class="cell bg-r" style="grid-area: 13/8;"></div>
+    <div class="cell star" style="grid-area: 13/9;">☆</div>
+    <!-- Row 14 -->
+    <div class="cell bg-r" style="grid-area: 14/7;"></div>
+    <div class="cell bg-r" style="grid-area: 14/8;"></div>
+    <div class="cell" style="grid-area: 14/9;"></div>
+    <!-- Row 15 -->
+    <div class="cell" style="grid-area: 15/7;"></div>
+    <div class="cell arrow text-r" style="grid-area: 15/8;">⬆</div>
+    <div class="cell" style="grid-area: 15/9;"></div>
+
+    <!-- LEFT ARM (Columns 1 to 6, Rows 7 to 9) -->
+    <!-- Row 7 -->
+    <div class="cell" style="grid-area: 7/1;"></div>
+    <div class="cell bg-g" style="grid-area: 7/2;"></div>
+    <div class="cell" style="grid-area: 7/3;"></div>
+    <div class="cell" style="grid-area: 7/4;"></div>
+    <div class="cell" style="grid-area: 7/5;"></div>
+    <div class="cell" style="grid-area: 7/6;"></div>
+    <!-- Row 8 -->
+    <div class="cell arrow text-g" style="grid-area: 8/1;">➡</div>
+    <div class="cell bg-g" style="grid-area: 8/2;"></div>
+    <div class="cell bg-g" style="grid-area: 8/3;"></div>
+    <div class="cell bg-g" style="grid-area: 8/4;"></div>
+    <div class="cell bg-g" style="grid-area: 8/5;"></div>
+    <div class="cell bg-g" style="grid-area: 8/6;"></div>
+    <!-- Row 9 -->
+    <div class="cell" style="grid-area: 9/1;"></div>
+    <div class="cell" style="grid-area: 9/2;"></div>
+    <div class="cell star" style="grid-area: 9/3;">☆</div>
+    <div class="cell" style="grid-area: 9/4;"></div>
+    <div class="cell" style="grid-area: 9/5;"></div>
+    <div class="cell" style="grid-area: 9/6;"></div>
+
+    <!-- RIGHT ARM (Columns 10 to 15, Rows 7 to 9) -->
+    <!-- Row 7 -->
+    <div class="cell" style="grid-area: 7/10;"></div>
+    <div class="cell" style="grid-area: 7/11;"></div>
+    <div class="cell" style="grid-area: 7/12;"></div>
+    <div class="cell star" style="grid-area: 7/13;">☆</div>
+    <div class="cell" style="grid-area: 7/14;"></div>
+    <div class="cell" style="grid-area: 7/15;"></div>
+    <!-- Row 8 -->
+    <div class="cell bg-b" style="grid-area: 8/10;"></div>
+    <div class="cell bg-b" style="grid-area: 8/11;"></div>
+    <div class="cell bg-b" style="grid-area: 8/12;"></div>
+    <div class="cell bg-b" style="grid-area: 8/13;"></div>
+    <div class="cell bg-b" style="grid-area: 8/14;"></div>
+    <div class="cell arrow text-b" style="grid-area: 8/15;">⬅</div>
+    <!-- Row 9 -->
+    <div class="cell" style="grid-area: 9/10;"></div>
+    <div class="cell" style="grid-area: 9/11;"></div>
+    <div class="cell" style="grid-area: 9/12;"></div>
+    <div class="cell" style="grid-area: 9/13;"></div>
+    <div class="cell bg-b" style="grid-area: 9/14;"></div>
+    <div class="cell" style="grid-area: 9/15;"></div>
+  </div>
+
+</body>
+</html>
